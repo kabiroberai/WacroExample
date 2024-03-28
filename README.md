@@ -1,8 +1,8 @@
 # Wacro Example
 
-This is an example macro built using [Wacro](https://github.com/kabiroberai/Wacro).
+This is an example macro built using [Wacro](https://github.com/kabiroberai/Wacro). You're encouraged to go through the Wacro README for context.
 
-## Building the raw macro
+## Updating the raw macro
 
 This step is necessary if you update the ExampleRaw target; you must update ExampleRaw.wasm.dylib in tandem.
 
