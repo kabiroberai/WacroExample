@@ -11,15 +11,6 @@
       }
     },
     {
-      "identity" : "swift-syntax",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-syntax.git",
-      "state" : {
-        "revision" : "fa8f95c2d536d6620cc2f504ebe8a6167c9fc2dd",
-        "version" : "510.0.1"
-      }
-    },
-    {
       "identity" : "swift-system",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-system",
@@ -34,7 +25,7 @@
       "location" : "https://github.com/kabiroberai/Wacro",
       "state" : {
         "branch" : "main",
-        "revision" : "a4ebc34cef0d3a241a7922085c02d1fcc0326732"
+        "revision" : "f30a36dec4b8d1ec70b899825df4f5781d5dfdd5"
       }
     },
     {

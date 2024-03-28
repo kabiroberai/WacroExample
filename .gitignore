@@ -4,3 +4,4 @@ xcuserdata/
 .netrc
 .vscode
 .build
+*.xcworkspace
