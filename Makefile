@@ -5,6 +5,7 @@ wasm::
 	# rename to dylib to sneak past the sandbox
 	# https://github.com/apple/swift/blob/418dd95d8e324666e6ad4ecc13de7344ccc12fed/lib/Basic/Sandbox.cpp#L28
 	cp -a .build/wasm32-unknown-wasi/release/ExampleRaw.wasm ExampleRaw.wasm.dylib
+	type -p wasm-opt && wasm-opt -Os ExampleRaw.wasm.dylib -o ExampleRaw.wasm.dylib || :
 
 # WebMacroRunner uses WKWebView which can't run in the macro sandbox
 client::
