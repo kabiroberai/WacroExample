@@ -13,6 +13,10 @@ let package = Package(
             name: "ExampleRaw",
             targets: ["ExampleRaw"]
         ),
+        .library(
+            name: "ExampleLibrary",
+            targets: ["ExampleLibrary"]
+        ),
         .executable(
             name: "ExampleClient",
             targets: ["ExampleClient"]
@@ -25,19 +29,25 @@ let package = Package(
         .executableTarget(
             name: "ExampleClient",
             dependencies: [
-                "ExampleHost"
+                "ExampleLibrary"
             ]
         ),
-        .executableTarget(
-            name: "ExampleRaw",
+        .target(
+            name: "ExampleLibrary",
             dependencies: [
-                .product(name: "WacroPluginRaw", package: "Wacro"),
+                "ExampleHost"
             ]
         ),
         .macro(
             name: "ExampleHost",
             dependencies: [
                 .product(name: "WacroPluginHost", package: "Wacro"),
+            ]
+        ),
+        .executableTarget(
+            name: "ExampleRaw",
+            dependencies: [
+                .product(name: "WacroPluginRaw", package: "Wacro"),
             ]
         ),
     ]
