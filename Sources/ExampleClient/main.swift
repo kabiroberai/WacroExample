@@ -1,4 +1,3 @@
-import Foundation
 import ExampleLibrary
 
 print(#stringify(1 + 1).1)
